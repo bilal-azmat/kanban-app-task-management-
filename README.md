@@ -1,4 +1,5 @@
 #Kanban App Demo Project:
+
 A boilerplate project created in flutter using Getx and firebase firestore. clone the main branches mentioned below:
 
 #Getting Started
@@ -9,8 +10,9 @@ I have used firebase firestore for database and to download the tasks data in cs
 #Step 1:
 
 Download or clone this repo by using the link below:
-
+```
 https://github.com/bilal-azmat/kanban-app-task-management-.git
+```
 
 #Step 2:
 
@@ -21,15 +23,16 @@ flutter pub get
 #Step 3:
 
 #Boilerplate Features:
-
+```
 Kanban Screen
 Theme
 Firebase Forestore (For database)
 GetX (state management)
 Form Validation
 Folder Structure
+```
 Here is the core folder structure which flutter provides.
-
+```
 flutter-app/
 |- android
 |- build
@@ -50,6 +53,8 @@ lib/
 |- ui/values/
 |- main.dart
 
+```
+
 Now, lets dive into the lib folder which has the main code for the application.
 
 1- data - Contains the data layer of your project, includes directories for controller,repositry,models,service
@@ -58,7 +63,7 @@ Now, lets dive into the lib folder which has the main code for the application.
 Data
 This directory contains all the application level data. A separate file is created for each type as shown in example below:
 
-
+```
 data/
 |- controller/
 |- task_controller.dart
@@ -77,10 +82,12 @@ data/
 |- service
 |- database_service.dart
 
+```
+
 
 UI
 This directory contains all the ui of your application. Each screen is located in a separate folder making it easy to combine group of files related to that particular screen. All the screen common widgets will be placed in common_widget directory and all the style,dimensions,colors,strings will be added under values directory as shown in the example below:
-
+```
 ui/
 |- screens/
 |- add_task_screen.dart
@@ -96,10 +103,12 @@ ui/
 |- custom_button.dart
 |- custom_textfield.dart
 
+```
+
 
 #Main
 This is the starting point of the application.
-
+```
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -127,6 +136,8 @@ primarySwatch: Colors.blue,
     );
 }
 }
+
+```
 
 
 #Conclusion:
